@@ -44,8 +44,10 @@ networks:
   rabbitmq_network:
     driver: bridge
 
+# descomentar para rodar local
+# excluir o conteiner do compose e as imagens
 
-# docker-compose up -d
+# docker-compose up
 # docker-compose build
 
 # docker tag rabbitmq_sd-consumer:latest mateus2k2/rabbitmq_sd-consumer:latest

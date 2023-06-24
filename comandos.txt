@@ -7,19 +7,3 @@ docker run -it --name consumerMQ mateus2k2/consumer:1.0
 
 docker build -t mateus2k2/producer:1.0 .
 docker run -it --name producerMQ mateus2k2/producer:1.0
-
-INSTRUÇÕES
-
-git clone https://github.com/mateus2k2/TP3-SD
-cd src
-
-Mudar configuração do .env caso desejar
-
-docker-compose up
-Esperar ate que tudo se inicialize 
-
-
-LINKS
-
-https://hub.docker.com/ 
-http://localhost:15672/

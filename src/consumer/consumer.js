@@ -25,8 +25,10 @@ async function connect() {
       console.log('Message received:', message.content.toString());
       channel.ack(message);
     });
-  } catch (error) {
-    connect()
+  } 
+  catch (error) {
+    console.log("CONECTION ERROR")
+    setTimeout(connect, 2000);
   }
 }
 

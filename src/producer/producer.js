@@ -39,8 +39,8 @@ async function connect() {
             console.log('Message sent:', message);
         }, interval);
     } catch (error) {
-        // console.error('Producer error:', error);
-        connect()
+        console.log("CONECTION ERROR")
+        setTimeout(connect, 2000);
     }
 }
 
