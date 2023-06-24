@@ -19,6 +19,9 @@ services:
     image: mateus2k2/rabbitmq_sd-consumer
     env_file:
       - .env
+    environment:
+      - MESSAGE_SIZE=${MESSAGE_SIZE}
+      - MESSAGES_PER_SECOND=${MESSAGES_PER_SECOND}
     depends_on:
       - rabbitmq
     networks:
@@ -33,6 +36,9 @@ services:
     image: mateus2k2/rabbitmq_sd-producer
     env_file:
       - .env
+    environment:
+      - MESSAGE_SIZE=${MESSAGE_SIZE}
+      - MESSAGES_PER_SECOND=${MESSAGES_PER_SECOND}
     depends_on:
       - rabbitmq
     networks:
